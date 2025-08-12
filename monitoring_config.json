@@ -1,0 +1,26 @@
+{
+  "monitoring": {
+    "enabled": true,
+    "check_interval_hours": 24,
+    "performance_targets": {
+      "max_processing_time": 5.0,
+      "min_success_rate": 0.9,
+      "min_accuracy": 0.8,
+      "chatgpt5_target_achievement": 0.8
+    },
+    "alerts": {
+      "performance_degradation": true,
+      "low_accuracy": true,
+      "system_errors": true
+    },
+    "retention": {
+      "detailed_reports_days": 30,
+      "summary_reports_days": 90
+    }
+  },
+  "testing": {
+    "min_test_images": 5,
+    "known_players_source": "users.json",
+    "fallback_players_count": 50
+  }
+}
